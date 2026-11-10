@@ -14,22 +14,21 @@ const genres = [
 
 const packs = [
   {
-    id: "VERITY1.0",
+    id: "horror-pack",
     genre: "hardcore",
-    name: "VERITY",
-    short: "Атмосферный хоррор: темнота, звуки, верити, сюжет.",
+    name: "Horror Pack",
+    short: "Атмосферный хоррор: темнота, звуки, ограниченные ресурсы.",
     image: "https://placehold.co/320x180/1b1f24/8a94a3?text=Horror+Pack",
     mcVersion: "1.20.1",
     loader: "forge",
     loaderVersion: "Forge",
     size: "~200 МБ",
-    ram: "6 ГБ",
-    download: "https://disk.yandex.ru/d/bkITZwzXfrlX1Q",
+    ram: "4 ГБ",
+    download: "https://example.com/horror-pack.zip",
     instructions: [
       "Скачайте архив по кнопке выше.",
       "Установите Forge 1.20.1 в лаунчере (кнопка «Установить»).",
       "Запустите игру один раз, закройте.",
-      "За инструкцией по настройки мода, обратитесь ко мне.",
       "Скопируйте моды в <code>.minecraft/mods</code>, папку <code>config</code> — в корень <code>.minecraft</code>."
     ],
     hint: "Играйте в наушниках — большая часть атмосферы построена на звуке."
@@ -37,15 +36,15 @@ const packs = [
   {
     id: "horror-1-20-1",
     genre: "hardcore",
-    name: "HP HORROR4.0 Stable",
+    name: "Horror 1.20.1",
     short: "Классический хоррор на Forge 1.20.1: монстры, тьма, паранойя.",
     image: "https://placehold.co/320x180/1b1f24/8a94a3?text=Horror+1.20.1",
     mcVersion: "1.20.1",
     loader: "forge",
     loaderVersion: "Forge",
     size: "~180 МБ",
-    ram: "8 ГБ",
-    download: "https://disk.yandex.ru/d/b-NYCeHOEm1toA",
+    ram: "4 ГБ",
+    download: "https://example.com/horror-1-20-1.zip",
     instructions: [
       "Скачайте архив по кнопке выше.",
       "Установите Forge 1.20.1 в лаунчере.",
@@ -93,6 +92,19 @@ function showHome() {
             <div class="badges"><span class="badge">${count} сборок</span></div>
           </div>`;
       }).join("")}
+    </div>
+
+    <div class="discord-block">
+      <h2 class="page-title" style="font-size:1.2rem;">Discord</h2>
+      <p class="page-sub">Заходите за обновлениями и поддержкой</p>
+      <iframe
+        src="https://discord.com/widget?id=1490533611940872223&theme=dark"
+        width="350"
+        height="500"
+        allowtransparency="true"
+        frameborder="0"
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+      </iframe>
     </div>
   `;
   window.scrollTo(0, 0);
