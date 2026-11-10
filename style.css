@@ -290,6 +290,18 @@ footer {
   line-height: 1.5;
 }
 
+/* Discord widget */
+.discord-block {
+  margin-top: 48px;
+}
+
+.discord-block iframe {
+  border-radius: 10px;
+  border: 1px solid var(--border) !important;
+  display: block;
+  max-width: 100%;
+}
+
 /* Responsive */
 @media (max-width: 640px) {
   header {
@@ -310,5 +322,10 @@ footer {
 
   .pack-header {
     gap: 20px;
+  }
+
+  .discord-block iframe {
+    width: 100%;
+    height: 420px;
   }
 }
